@@ -66,9 +66,9 @@
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__data">
-            <span class="home__greeting">Hey! I'm </span>
-            <h1 class="home__name">Jahnavi</h1>
-            <h3 class="home__education">Tech Enthusiast</h3>
+            <span class="home__greeting" style="font-size: 1.4rem;">Hey! I'm </span>
+            <h1 class="home__name" style="font-size: 2.0rem;">Jahnavi</h1>
+            <h3 class="home__education" style="font-size: 1.3rem;">Software Engineer</h3>
             <div class="home__buttons">
               <a
                 download=" "
@@ -81,9 +81,8 @@
               <a href="#about" class="button">About me</a>
             </div>
           </div>
-          <div class="home__handle">
-            <img src="assets\img\new_me_large.png" alt="" class="home__img" />
-            <!-- DISPLAY PICTURE(replace) -->
+          <div class="home__handle" style="display: flex; justify-content: center; align-items: flex-end; overflow: hidden; width: 227px; margin: auto;">
+            <img src="assets/img/latest.png" alt="" class="home__img" style="object-fit: contain; object-position: center bottom; margin: 0; padding: 0;" />
           </div>
           <div class="home__social">
             <a href="https://www.linkedin.com/in/jahnavi-698706230/"  target="_blank" class="home__social-link">
@@ -92,8 +91,8 @@
             <a href="https://github.com/jahnavi-22"  target="_blank" class="home__social-link">
               <i class="bx bxl-github"> </i>
             </a>
-            <a href="https://instagram.com/"  target="_blank" class="home__social-link">
-              <i class="bx bxl-instagram"></i>
+            <a href="mailto:jahnavi.22053@gmail.com" class="home__social-link">
+              <i class="bx bx-envelope"></i>
             </a>
           </div>
           
@@ -102,158 +101,191 @@
 
       <!--=============== ABOUT ===============-->
       <section class="about section" id="about">
-        <span class="section__subtitle">So who am I anyway?</span>
-        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle" style="font-size: 1.2rem;">Who am I anyway?</span>
+        <h2 class="section__title" style="font-size: 1.8rem;">About Me</h2>
 
         <div class="about__container container grid">
-          <img
-            src="assets\img\IMG_0220.JPG"
-            alt=""
-            class="about__img"
-          />
+          <img src="assets\img\IMG_0220.JPG" alt="" class="about__img" />
 
-          <div class="about__data">
-            <div class="about__info">
-              <div class="about__box">
+          <div class="about__data" style="padding: 0 1rem;">
+            <div class="about__info" style="display: grid; grid-template-columns: repeat(4, minmax(min-content, 160px)); gap: 0.7rem; justify-content: start; margin-bottom: 2rem;">
+              <div class="about__box" style="padding: 0.8rem;">
                 <i class="bx bx-award about__icon"></i>
-                <h3 class="about__title">Experience</h3>
-                <span class="about__subtitle">2+ Years</span>
+                <h3 class="about__title">Education</h3>
+                <span class="about__subtitle">CGPA 9.24</span>
               </div>
 
-              <div class="about__box">
+              <div class="about__box" style="padding: 0.8rem;">
                 <i class="bx bx-briefcase-alt about__icon"></i>
-                <h3 class="about__title">Completed</h3>
-                <span class="about__subtitle">4 Projects</span>
+                <h3 class="about__title">Experience</h3>
+                <span class="about__subtitle">Flipkart Intern</span>
               </div>
 
-              <div class="about__box">
-                <i class="bx bx-palette about__icon"></i>
-                <h3 class="about__title">Domains</h3>
-                <span class="about__subtitle">All things Creative!</span>
+              <div class="about__box" style="padding: 0.8rem;">
+                <i class="bx bx-code-alt about__icon"></i>
+                <h3 class="about__title">Projects</h3>
+                <span class="about__subtitle">3+ Major</span>
+              </div>
+
+              <div class="about__box" style="padding: 0.8rem;">
+                <i class="bx bx-code-curly about__icon"></i>
+                <h3 class="about__title">Tech Stack</h3>
+                <span class="about__subtitle">Full Stack</span>
               </div>
             </div>
-            <p class="about__description">
-              Dedicated and result-oriented CSE student with a passion for technology and a proven track record of academic
-excellence. Recognized for adaptability, strong problem-solving abilities, and a commitment to continuous learning. Eager
-to contribute my skills and enthusiasm to innovative projects in a collaborative and dynamic professional environment.
-            </p>
-            <a
-              href="#contact
-            "
-              class="button"
-              >Contact me</a
-            >
+
+            <p class="about__description" style="margin: 0;">
+              Results-driven and adaptable Software Engineer Intern with hands-on experience in backend development and microservices architecture at Flipkart. Proficient in building and optimizing large-scale services using Java, Spring Boot, Elasticsearch, and GCP. Skilled in analyzing real-time data using Kibana and integrating feature flags for remote configurations.
+            </p><br><br>
+            <a href="#contact" class="button">Contact me</a>
           </div>
         </div>
       </section>
 
       <!--=============== SKILLS ===============-->
       <section class="skills section" id="skills">
-        <span class="section__subtitle">Getting stuff done.</span>
-        <h2 class="section__title">My Skillset</h2>
+        <span class="section__subtitle" style="font-size: 1.2rem;">Technical Expertise</span>
+        <h2 class="section__title" style="font-size: 1.8rem;">My Skillset</h2>
 
-        <div class="skills__container container grid">
-          <div class="skills__content">
-            <h3 class="skills__title">Technical skills</h3>
+        <div class="skills__container container grid" style="grid-template-columns: repeat(2, minmax(350px, 420px)); gap: 2rem; justify-content: center; padding: 2rem;">
+          <!-- Programming Languages -->
+          <div class="skills__content" style="padding: 2.5rem;">
+            <h3 class="skills__title" style="font-size: 1.2rem; margin-bottom: 1.2rem;">Programming Languages</h3>
             <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+              <div class="skills__group" style="gap: 1.2rem;">
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Graphic Design</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name" style="font-size: 1rem;">Java</h3>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Website Development</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name" style="font-size: 1rem;">JavaScript</h3>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Java Programmer</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
-                  <div>
-                    <h3 class="skills__name">C++ Programmer</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name" style="font-size: 1rem;">C/C++</h3>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Cloud Computing</h3>
-                    <span class="skills__level">Beginner</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
-                  <div>
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name" style="font-size: 1rem;">SQL</h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="skills__content">
-            <h3 class="skills__title">The Good Part</h3>
+          <!-- Frameworks & Libraries -->
+          <div class="skills__content" style="padding: 2.5rem;">
+            <h3 class="skills__title" style="font-size: 1.2rem; margin-bottom: 1.2rem;">Frameworks & Libraries</h3>
             <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+              <div class="skills__group" style="gap: 1.2rem;">
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Leadership</h3>
-                    <span class="skills__level">Organization and team building.</span> 
+                    <h3 class="skills__name" style="font-size: 1rem;">Spring Boot</h3>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Proactive</h3>
-                    <span class="skills__level">Core Member and Graphics Head @</span>
-                    <a class="link"href="https://www.instagram.com/gdsc_cuhp/">GDSC CUHP</a>
+                    <h3 class="skills__name" style="font-size: 1rem;">React.js</h3>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Human Resource</h3>
-                    <span class="skills__level">Interviewed 30+ candidates as a talent <br> acquisition effort</span> </span> 
+                    <h3 class="skills__name" style="font-size: 1rem;">Node.js</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
+                  <div>
+                    <h3 class="skills__name" style="font-size: 1rem;">Express.js</h3>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+          <!-- Microservices & Infrastructure -->
+          <div class="skills__content" style="padding: 2.5rem;">
+            <h3 class="skills__title" style="font-size: 1.2rem; margin-bottom: 1.2rem;">Cloud & Infrastructure</h3>
+            <div class="skills__box">
+              <div class="skills__group" style="gap: 1.2rem;">
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Communication</h3>
-                    <span class="skills__level">Bilingual Proficiency</span>
+                    <h3 class="skills__name" style="font-size: 1rem;">GCP</h3>
                   </div>
                 </div>
 
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"> </i>
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
                   <div>
-                    <h3 class="skills__name">Cloud Enthusiast</h3>
-                    <span class="skills__level">Acquired Google Cloud Computing Foundations Pathway <br> badge.</span>
+                    <h3 class="skills__name" style="font-size: 1rem;">Kubernetes (GKE)</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
+                  <div>
+                    <h3 class="skills__name" style="font-size: 1rem;">Elasticsearch</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
+                  <div>
+                    <h3 class="skills__name" style="font-size: 1rem;">REST APIs</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Development -->
+          <div class="skills__content" style="padding: 2.5rem;">
+            <h3 class="skills__title" style="font-size: 1.2rem; margin-bottom: 1.2rem;">Tools & Databases</h3>
+            <div class="skills__box">
+              <div class="skills__group" style="gap: 1.2rem;">
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
+                  <div>
+                    <h3 class="skills__name" style="font-size: 1rem;">MySQL</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
+                  <div>
+                    <h3 class="skills__name" style="font-size: 1rem;">Git & GitHub</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
+                  <div>
+                    <h3 class="skills__name" style="font-size: 1rem;">Kibana</h3>
+                  </div>
+                </div>
+
+                <div class="skills__data" style="padding: 0.3rem 0;">
+                  <i class="bx bxs-badge-check" style="font-size: 1.1rem;"> </i>
+                  <div>
+                    <h3 class="skills__name" style="font-size: 1rem;">IntelliJ, VS Code</h3>
                   </div>
                 </div>
               </div>
@@ -262,17 +294,15 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
         </div>
       </section>
 
+
       <!--=============== SERVICES ===============-->
       <section class="services__container">
-        <span class="section__subtitle">My services</span>
-        <h2 class="section__title">What I offer</h2>
+        <span class="section__subtitle" style="font-size: 1.2rem;">My Experience</span>
+        <h2 class="section__title" style="font-size: 1.8rem;">What I've Done</h2>
         <div class="services__container container grid">
-          
-
           <div class="services__card">
             <h3 class="services__title">
-              Full Stack <br>
-              Development
+              Software Engineering Internship
               
             </h3>
             <span class="services__button">
@@ -282,43 +312,38 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
             <div class="services__modal">
               <div class="services__modal-content">
                 <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Web Development</h3>
+                <h3 class="services__modal-title">Flipkart (Cleartrip) Internship</h3>
                 <p class="services__modal-description">
-                  Building websites!
+                  Software Engineer Intern (July 2024 – June 2025)
                 </p>
 
                 <ul class="services__modal-list">
-
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Strong foundation in HTML, CSS, JavaScript.</p>
+                    <p class="services__modal-info">Developed & optimized critical filters for Cleartrip For Work</p>
                   </li>
 
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Experienced in using MySQL.</p>
+                    <p class="services__modal-info">Fixed critical bug in checkout flow pricing</p>
                   </li>
 
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Experienced in using Node to handle backend.</p>
+                    <p class="services__modal-info">Led SEV-0 incident resolutions</p>
                   </li>
 
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Committed to staying updated with latest trends and technologies.
-                    </p>
+                    <p class="services__modal-info">Implemented analytics and monitoring dashboards</p>
                   </li>
-
                 </ul>
               </div>
             </div>
           </div>
 
-
           <div class="services__card">
-            <h3 class="services__title">Programming</h3>
+            <h3 class="services__title">Achievements & Leadership</h3>
             <span class="services__button">
               See more <i class="bx bx-right-arrow-alt"></i>
             </span>
@@ -326,42 +351,34 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
             <div class="services__modal">
               <div class="services__modal-content">
                 <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Programming</h3>
-                <p class="services__modal-description">
-                  More than 2 years of experience as a programmer 
-                </p>
-
+                <h3 class="services__modal-title">Achievements & Leadership</h3>
                 <ul class="services__modal-list">
-                   <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Strong problem-solving aptitude</p>
-                  </li> 
-
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info"> Prioritizing clean and efficient code practices</p>
+                    <p class="services__modal-info">Selected for University Coding Academy</p>
                   </li>
 
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">  Proficient in multiple programming languages as C, C++, Java</p>
+                    <p class="services__modal-info">1st position in intra-college Web-a-thon</p>
                   </li>
 
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Social Media Marketing
-                    </p>
+                    <p class="services__modal-info">Head of Graphic Designing Team @ GDSC</p>
                   </li>
 
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">Event Coordinator & Organizer - Organized multiple hackathons like OctaHacks</p>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
 
-
           <div class="services__card">
-            <h3 class="services__title">Graphic Design</h3>
+            <h3 class="services__title">Certifications & Training</h3>
             <span class="services__button">
               See more <i class="bx bx-right-arrow-alt"></i>
             </span>
@@ -369,27 +386,26 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
             <div class="services__modal">
               <div class="services__modal-content">
                 <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Graphic Design</h3>
-                <p class="services__modal-description">
-                  Using personal expertise on colours, typography and precise attention to visuals transforming PR campaigns and narratives through quality visuals for quality clients.
-                </p>
-
+                <h3 class="services__modal-title">Professional Certifications</h3>
                 <ul class="services__modal-list">
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">User interface development</p>
+                    <p class="services__modal-info">Google Cloud Computing Foundations Pathway – Google</p>
                   </li>
 
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">Web page development</p>
+                    <p class="services__modal-info">Career Essentials in Generative AI by Microsoft and LinkedIn</p>
                   </li>
 
                   <li class="services__modal-item">
                     <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Branding beyond visuals
-                    </p>
+                    <p class="services__modal-info">Crash Course on Python by Google</p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">Professional Skills for the Workplace (Specialization) by UC Davis</p>
                   </li>
                 </ul>
               </div>
@@ -397,53 +413,63 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
           </div>
 
           
-
         </div>
       </section>
 
-      <!--=============== WORK ===============-->
-      <section class="work section" id="work">
-        <span class="section__subtitle">My Portfolio </span>
-        <h2 class="section__title">Recent Works</h2>
+
+       <!--=============== WORK ===============-->
+       <section class="work section" id="work">
+        <span class="section__subtitle"  style="font-size: 1.2rem;">My Portfolio</span>
+        <h2 class="section__title" style="font-size: 1.8rem;">Featured Projects</h2>
 
         <div class="work__filters">
           <span class="work__item active-work" data-filter="all">All</span>
-          <!-- <span class="work__item" data-filter=".web">Media</span> -->
-          <span class="work__item" data-filter=".movil">Graphic Design</span>
-          <span class="work__item" data-filter=".design">Web Dev</span>
+          <span class="work__item" data-filter=".fullstack">Full Stack</span>
+          <span class="work__item" data-filter=".frontend">Frontend</span>
         </div>
 
         <div class="work__container container grid">
-          <!-- <div class="work__card mix web">
-            <img src="assets/img/IMG_9260-01.jpeg" alt="" class="work__img" />
-            <h3 class="work__title">Photography</h3>
-            <a href="#" class="work__button">
-              Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div> -->
-
-          <div class="work__card mix movil">
-            <img src="assets/img/03e5f6100d2034508b9a1e07baf46927.gif" alt="" class="work__img" />
-            <h3 class="work__title">Graphic Design</h3>
-            <a href="https://www.figma.com/file/7EY5pGHM0Xm21MKKwgFm4M/stuff?type=design&node-id=0%3A1&mode=design&t=6ol5FAFGxjOtNNCe-1" target="_blank" class="work__button">
-              Work <i class="bx bx-right-arrow-alt work__icon"></i>
+          <div class="work__card mix fullstack">
+            <img src="assets/img/codeweave1.png" alt="" class="work__img" />
+            <h3 class="work__title">CODEWEAVE</h3>
+            <span class="work__subtitle">Full Stack Project</span>
+            <a href="https://github.com/jahnavi-22/code-weave" target="_blank" class="work__button">
+              View Project <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
-          <div class="work__card mix design">
-            <img src="assets/img/coding.gif" alt="" class="work__img" />
-            <h3 class="work__title">Portfolio Website</h3>
-            <a href="#contact" class="work__button">
-              Get it done<i class="bx bx-right-arrow-alt work__icon"></i>
+          <div class="work__card mix fullstack">
+            <img src="assets/img/library.png" alt="" class="work__img" />
+            <h3 class="work__title">Library Management</h3>
+            <span class="work__subtitle">Full Stack Project</span>
+            <a href="https://github.com/jahnavi-22/Library-Management-System" target="_blank" class="work__button">
+              View Project <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
+          <div class="work__card mix frontend">
+            <img src="assets/img/ecom.png" alt="" class="work__img" />
+            <h3 class="work__title">E-commerce Platform</h3>
+            <span class="work__subtitle">Frontend Project</span><br>
+            <a href="https://github.com/jahnavi-22/E-Commerce-Website" target="_blank" class="work__button">
+              View Project <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card mix frontend">
+            <img src="assets/img/spotlight.png" alt="" class="work__img" />
+            <h3 class="work__title">Car Dealership</h3>
+            <span class="work__subtitle">Frontend Project</span>
+            <a href="https://github.com/jahnavi-22/car-dealership-website" target="_blank" class="work__button">
+              View Project <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+          </div>
         </div>
       </section>
 
       <!--=============== TESTIMONIALS ===============-->
-      <section class="testimonial section">
-        <span class="section__subtitle">What my friends say</span>
+      <!-- <section class="testimonial section"> -->
+        <!-- <span class="section__subtitle">What my friends say</span>
         <h2 class="section__title">Testimonials</h2>
 
         <div class="testimonial__container container swiper">
@@ -460,18 +486,7 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
               </p>
             </div>
 
-            <!-- <div class="testimonial__card swiper-slide">
-              <img
-                src="assets/img/testimonial2.png"
-                alt=""
-                class="testimonial__img"
-              />
-              <h3 class="testimonial__name">Paula Vausy</h3>
-              <p class="testimonial description">
-                Influencer wala photoshoot karde plzzzzz!!
-              </p>
-            </div> -->
-
+            
             <div class="testimonial__card swiper-slide">
               <img
                 src="assets/img/testimonial3.png"
@@ -487,73 +502,50 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
 
           <div class="swiper-pagination"></div>
         </div>
-      </section>
+      </section> -->
 
       <!--=============== CONTACT ===============-->
       <section class="contact section" id="contact">
-        <span class="section__subtitle">Get in touch</span>
-        <h2 class="section__title">Let's start the conversation.</h2>
+        <span class="section__subtitle"  style="font-size: 1.2rem;">Get in touch</span>
+        <h2 class="section__title" style="font-size: 1.8rem;">Let's Connect</h2>
         
-        <div class="contact__container container grid">
-          <div class="contact__content">
-            <h3 class="contact__title">Talk to Me</h3>
-            
-            <div class="contact__info">
-              <div class="contact__card">
-                <i class="bx bxl-instagram contact__card-icon"></i>
-                <h3 class="contact__card-title">Instagram</h3>
-                <span class="contact__card-data">@jahnavi</span>
-                <a href="" target="_blank" class="contact__button">
-                  Direct Message
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                </a>
-              </div>
-
-                <div class="contact__card">
-                  <i class='bx bx-calendar-check'></i>
-                  <h3 class="contact__card-title">Let's Connect</h3>
-                  <span class="contact__card-data">Reserve a 30 minute meeting</span>
-                  <a href="https://calendly.com" target="_blank" class="contact__button">
-                    Book Now
-                    <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                  </a>
-                </div>
-
-               
-                  <div class="contact__card">
-                    <i class="bx bx-mail-send contact__card-icon"></i>
-                    <h3 class="contact__card-title">Email</h3>
-                    <span class="contact__card-data">Have a project in mind?</span>
-                    <a href="mailto: jahnavi.22053@gmail.com" target="_blank" class="contact__button">
-                      Write to Me
-                      <i class="bx bx-right-arrow-alt contact__button-icon"></i>
-                    </a>
-                  </div>
+        <div class="contact__container container">
+          <div class="contact__content" style="display: flex; justify-content: center; gap: 2rem; padding: 2rem 1rem; margin-top: 1rem;">
+            <div class="contact__card" style="text-align: center; padding: 2rem 1.5rem; min-width: 200px;">
+              <i class="bx bx-mail-send contact__card-icon" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+              <h3 class="contact__card-title" style="margin-bottom: 0.5rem;">Email</h3>
+              <span class="contact__card-data" style="font-size: 0.9rem; display: block; margin-bottom: 1rem;">jahnavi.22053@gmail.com</span>
+              <a href="mailto:jahnavi.22053@gmail.com" target="_blank" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.25rem;">
+                Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
             </div>
-          </div>
 
-          <div class="contact__content">
-            <h3 class="contact__title">Latest</h3>
-<!-- YOUTUBE -->
-<img src="assets\img\AlgoMasters ShowDown(new).png" alt="AlgoMasters ShowDown" width="500" height="500" class="about__img">
-<!-- <form action="" class="contact__form">
-              <div class="contact__form-div">
-                <label for="" contact="contact__form-tag">Names</label>
-                <input type="text" placeholder="Insert your name" class="contact__form-input">
-              </div>
+            <div class="contact__card" style="text-align: center; padding: 2rem 1.5rem; min-width: 200px;">
+              <i class="bx bxl-linkedin-square contact__card-icon" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+              <h3 class="contact__card-title" style="margin-bottom: 0.5rem;">LinkedIn</h3>
+              <span class="contact__card-data" style="font-size: 0.9rem; display: block; margin-bottom: 1rem;">Jahnavi</span>
+              <a href="https://www.linkedin.com/in/jahnavi-698706230/" target="_blank" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.25rem;">
+                Connect <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
 
-              <div class="contact__form-div">
-                <label for="" contact="contact__form-tag">Mail</label>
-                <input type="email" placeholder="Insert your email" class="contact__form-input">
-              </div>
+            <div class="contact__card" style="text-align: center; padding: 2rem 1.5rem; min-width: 200px;">
+              <i class="bx bxl-github contact__card-icon" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+              <h3 class="contact__card-title" style="margin-bottom: 0.5rem;">GitHub</h3>
+              <span class="contact__card-data" style="font-size: 0.9rem; display: block; margin-bottom: 1rem;">jahnavi-22</span>
+              <a href="https://github.com/jahnavi-22" target="_blank" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.25rem;">
+                Follow <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
 
-              <div class="contact__form-div contact__form-area">
-                <label for="" contact="contact__form-tag">Project</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Write to us" class="contact__form-input"></textarea>
-              </div>
-
-            <button class="button">Send Message</button>
-            </form> -->
+            <div class="contact__card" style="text-align: center; padding: 2rem 1.5rem; min-width: 200px;">
+              <i class="bx bx-calendar contact__card-icon" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+              <h3 class="contact__card-title" style="margin-bottom: 0.5rem;">Schedule</h3>
+              <span class="contact__card-data" style="font-size: 0.9rem; display: block; margin-bottom: 1rem;">Book a meeting</span>
+              <a href="https://calendly.com/jahnavi-22053" target="_blank" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.25rem;">
+                Meet me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -573,7 +565,7 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
           </li>
 
           <li>
-            <a href="#testimonial" class="footer__link">Testimonial</a>
+            <a href="#skills" class="footer__link">Skills</a>
           </li>
         </ul>
 
@@ -582,12 +574,12 @@ to contribute my skills and enthusiasm to innovative projects in a collaborative
             <i class="bx bxl-linkedin"></i>
           </a>
 
-          <a href="https://instagram.com/" target="_blank" class="footer__social-link">
-            <i class="bx bxl-instagram"></i>
-          </a>
-
           <a href="mailto: jahnavi.22053@gmail.com" target="_blank" class="footer__social-link">
             <i class="bx bxl-gmail"></i>
+          </a>
+
+          <a href="https://calendly.com/jahnavi-22053" target="_blank" class="footer__social-link">
+            <i class="bx bx-calendar"></i>
           </a>
         </ul>
 
