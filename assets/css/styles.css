@@ -1,4 +1,3 @@
-
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
@@ -239,9 +238,18 @@ font-weight:var(--font-medium);
   font-size: var(--biggest-font-size);
 }
 
+
+.home__buttons{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  gap: 1.5rem;
+}
+
 .home__img{
   width: 180px;
 }
+
 .home__handle{
   justify-self: center;
   width: 120px;
@@ -255,14 +263,17 @@ font-weight:var(--font-medium);
   align-items: flex-end;
   justify-content:center;
   overflow: hidden;
-
 }
 
-.home__buttons{
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  gap: 1.5rem;
+@media (max-width: 768px) {
+  .home__handle {
+    width: 100px;  
+    height: 400px;  
+  }
+
+  .home__img {
+    width: 80px;  
+  }
 }
 
 .home__social, 
@@ -337,8 +348,11 @@ font-weight:var(--font-medium);
 }
 
 /*=============== ABOUT ===============*/
-.about__container{
-row-gap: 2.5rem;
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  align-items: center;
 }
 
 .about__img{
@@ -1017,4 +1031,278 @@ margin-bottom:2.5rem;
 
 
 
+}
+
+/* ===================== Responsive Styles ===================== */
+
+/* Tablet and below */
+@media screen and (max-width: 968px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .nav__menu {
+    padding: 1rem 1.5rem;
+  }
+  .home__container {
+    gap: 1rem;
+  }
+  .home__handle {
+    width: 200px;
+  }
+  .home__img {
+    width: 100%;
+  }
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about__data {
+    text-align: center;
+  }
+  .about__info {
+    grid-template-columns: repeat(2, 140px);
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .skills__container {
+    grid-template-columns: repeat(2, minmax(250px, 300px));
+    padding: 1rem;
+  }
+  .skills__content {
+    padding: 1.5rem;
+  }
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .contact__content {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .contact__card {
+    flex: 0 0 calc(50% - 1.5rem);
+    min-width: auto;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  .home__handle {
+    width: 180px;
+  }
+  .home__buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about__info {
+    grid-template-columns: 1fr;
+  }
+  .about__box {
+    padding: 0.75rem;
+  }
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+  .services__container {
+    grid-template-columns: 1fr;
+  }
+  .work__container {
+    grid-template-columns: 1fr;
+  }
+  .work__filters {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .contact__content {
+    flex-direction: column;
+  }
+  .contact__card {
+    width: 100%;
+  }
+}
+
+/* Small mobile */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .home__handle {
+    width: 160px;
+  }
+  .about__info {
+    grid-template-columns: 1fr;
+  }
+  .skills__box {
+    padding: 0.5rem;
+  }
+  .services__modal-content,
+  .work__card {
+    padding: 0.5rem;
+  }
+}
+
+/* Utility classes for responsive text */
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-size: 1.5rem;
+  }
+  .section__subtitle {
+    font-size: 1rem;
+  }
+  .home__greeting {
+    font-size: 1.2rem;
+  }
+  .home__name {
+    font-size: 2rem;
+  }
+  .home__education {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive grid for skills and projects (auto-fit) */
+.skills__container,
+.work__container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* ========== Custom Utility Classes for Clean HTML ========== */
+
+/* Home image alignment */
+.home__handle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  width: 250px; /* or your preferred width */
+  margin: auto;
+}
+.home__img {
+  object-fit: contain;
+  object-position: center bottom;
+  margin: 0;
+  padding: 0;
+  /* Remove width/height here if you want it to be responsive, or set a max-width if needed */
+  width: 100%;
+  height: auto;
+}
+
+/* About info grid */
+.about__info {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(min-content, 160px));
+  gap: 0.7rem;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+.about__box {
+  padding: 0.8rem;
+}
+
+/* About data alignment */
+.about__data {
+  padding: 0 1rem;
+}
+
+/* Contact section */
+.contact__content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+.contact__card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  min-width: 200px;
+  width: 100%;
+}
+.contact__card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact__card-title {
+  margin-bottom: 0.5rem;
+}
+.contact__card-data {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+.contact__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Skills section */
+.skills__container {
+  grid-template-columns: repeat(2, minmax(350px, 420px));
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+.skills__content {
+  padding: 2.5rem;
+}
+.skills__title {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.skills__group {
+  gap: 1.2rem;
+}
+.skills__data {
+  padding: 0.3rem 0;
+}
+.skills__name {
+  font-size: 1rem;
+}
+.bxs-badge-check,
+.bx-code-alt,
+.bx-code-curly,
+.bx-award,
+.bx-briefcase-alt {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer__container {
+  text-align: center;
+}
+.footer__title {
+  margin-bottom: 1rem;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.footer__link {
+  text-decoration: none;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.footer__social-link i {
+  font-size: 1.5rem;
+}
+.footer__copy {
+  font-size: 0.9rem;
+  color: #888;
 }
