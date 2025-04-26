@@ -1347,8 +1347,7 @@ margin-bottom:2.5rem;
     width: 100%;
     padding: 1rem 0.5rem;
   }
-  .footer__list,
-  .footer__social {
+  .footer__list {
     flex-direction: column;
     gap: 0.5rem;
   }
