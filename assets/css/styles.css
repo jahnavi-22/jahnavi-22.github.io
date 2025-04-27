@@ -1215,30 +1215,38 @@ margin-bottom:2.5rem;
   gap: 2rem;
   padding: 2rem 1rem;
   margin-top: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .contact__card {
   text-align: center;
-  padding: 2rem 1.5rem;
-  min-width: 200px;
-  width: 100%;
+  padding: 1.5rem 1rem;
+  flex: 1;
+  min-width: 0;
+  max-width: 250px;
 }
-.contact__card-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+
+/* Responsive adjustments for contact section */
+@media screen and (max-width: 992px) {
+  .contact__content {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .contact__card {
+    flex: 0 0 calc(50% - 1rem);
+    min-width: 200px;
+  }
 }
-.contact__card-title {
-  margin-bottom: 0.5rem;
-}
-.contact__card-data {
-  font-size: 0.9rem;
-  display: block;
-  margin-bottom: 1rem;
-}
-.contact__button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
+
+@media screen and (max-width: 576px) {
+  .contact__content {
+    flex-direction: column;
+  }
+  
+  .contact__card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 /* Skills section */
@@ -1290,7 +1298,7 @@ margin-bottom:2.5rem;
 .footer__link {
   text-decoration: none;
 }
-.footer__social {
+.footer__social, .footer__list {
   display: flex;
   justify-content: center;
   gap: 1rem;
