@@ -19,7 +19,6 @@
     <title>Jahnavi</title>
 
     <style>
-      /* Responsive styles for experience section */
       @media screen and (max-width: 768px) {
         .services__container.grid {
           grid-template-columns: 1fr !important;
@@ -76,8 +75,14 @@
             </li>
 
             <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="bx bx-briefcase"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
               <a href="#work" class="nav__link">
-                <i class="bx bx-briefcase-alt-2"> </i>
+                <i class="bx bx-code-block"> </i>
               </a>
             </li>
 
@@ -102,7 +107,7 @@
             <h3 class="home__education" style="font-size: 1.3rem;">Software Engineer</h3>
             <div class="home__buttons">
               <a
-                download=" "
+                download="Jahnavi-SDE-Resume"
                 href="assets/cvcv.pdf"
                 target="_blank"
                 class="button button--ghost"
@@ -327,7 +332,7 @@
 
 
       <!--=============== SERVICES ===============-->
-      <section class="services__container">
+      <section class="services__container" id="experience">
         <span class="section__subtitle" style="font-size: 1.2rem;">My Experience</span>
         <h2 class="section__title" style="font-size: 1.8rem;">What I've Done</h2>
         <div class="services__container container grid" style="grid-template-columns: repeat(2, 1fr); gap: 2rem;">
@@ -348,7 +353,8 @@
 
               <li class="services__item" style="display: flex; align-items: flex-start; margin-bottom: 0.5rem;">
                 <i class="bx bx-check services__icon" style="color: var(--first-color); margin-right: 0.5rem; font-size: 1.1rem;"></i>
-                <p class="services__info" style="margin: 0;">Fixed critical bug in checkout flow pricing, preventing revenue leakage</p>
+                <p class="services__info" style="margin: 0;">Identified and fixed a high-impact production bug that led to a Rs.40L revenue leak due to Rs.0 convenience fees being charged in
+                  certain cases.</p>
               </li>
 
               <li class="services__item" style="display: flex; align-items: flex-start; margin-bottom: 0.5rem;">
@@ -580,6 +586,10 @@
         <ul class="footer__list">
           <li>
             <a href="#about" class="footer__link">About</a>
+          </li>
+
+          <li>
+            <a href="#experience" class="footer__link">Work</a>
           </li>
 
           <li>
