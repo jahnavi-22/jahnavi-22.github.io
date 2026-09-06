@@ -353,7 +353,7 @@ button:focus-visible {
 /* Stat strip — pulled straight from real impact numbers, not decoration */
 .home__stats {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   max-width: 36rem;
   margin: 0 auto 3rem;
@@ -700,6 +700,13 @@ button:focus-visible {
   display: flex;
   align-items: center;
   column-gap: .25rem;
+}
+
+.work__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .work__button:hover .work__icon {
