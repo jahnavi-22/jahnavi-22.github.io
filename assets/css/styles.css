@@ -650,6 +650,9 @@ button:focus-visible {
   padding: 1.25rem;
   border-radius: 1rem;
   transition: .3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .work__card:hover {
@@ -707,6 +710,8 @@ button:focus-visible {
   align-items: center;
   column-gap: 1.5rem;
   flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 1rem;
 }
 
 .work__button:hover .work__icon {
