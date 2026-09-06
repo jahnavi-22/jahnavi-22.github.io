@@ -100,20 +100,16 @@
 
           <div class="home__stats">
             <div class="home__stat">
-              <span class="home__stat-value">78% <small>↑ from 40%</small></span>
-              <span class="home__stat-label">AI-handled web conversations</span>
+              <span class="home__stat-value">~60% <small>reduction</small></span>
+              <span class="home__stat-label">LLM calls (orchestration re-architecture)</span>
             </div>
             <div class="home__stat">
               <span class="home__stat-value">7s <small>↓ from 12s</small></span>
               <span class="home__stat-label">Conversational AI response time</span>
             </div>
             <div class="home__stat">
-              <span class="home__stat-value">70%</span>
-              <span class="home__stat-label">Growth in platform leads</span>
-            </div>
-            <div class="home__stat">
-              <span class="home__stat-value">2×</span>
-              <span class="home__stat-label">Lift in call engagement</span>
+              <span class="home__stat-value">71%</span>
+              <span class="home__stat-label">CSAT on AI-handled conversations</span>
             </div>
           </div>
 
@@ -141,11 +137,6 @@
 
           <div class="about__data">
             <div class="about__info">
-              <div class="about__box">
-                <i class="bx bx-award about__icon"></i>
-                <h3 class="about__title">Education</h3>
-                <span class="about__subtitle">9.10 CGPA</span>
-              </div>
 
               <div class="about__box">
                 <i class="bx bx-briefcase-alt about__icon"></i>
@@ -164,30 +155,39 @@
                 <h3 class="about__title">Tech Stack</h3>
                 <span class="about__subtitle">Full-Stack + AI</span>
               </div>
+
+              <div class="about__box">
+                <i class="bx bx-award about__icon"></i>
+                <h3 class="about__title">Education</h3>
+                <span class="about__subtitle">9.10 CGPA</span>
+              </div>
             </div>
 
             <div class="about__description">
               <p>
-                I'm a Software Development Engineer at Amber who enjoys
-                building products that solve real problems at scale.
+                I'm a Software Development Engineer at Amber, on the team building our
+                AI customer-support system. I like working on things that have to hold
+                up in production, not just in a demo.
               </p>
               <p>
-                Over the past year, I've worked on everything from AI-powered customer 
-                support systems to partner-facing platforms. I led the migration of our 
-                support AI from Zendesk to Zoho across web and WhatsApp, improved response 
-                times by reworking backend workflows, and built features that allow partners 
-                to customize their own branding, content, and inventory.
+                Most of my time goes into making that support AI genuinely useful — I
+                re-architected our orchestration layer to cut LLM calls by around 60%,
+                built the search-and-recommendation tooling that surfaces the right options
+                when there's no exact match, and spent a good while getting response times
+                down. I also build partner-facing product features, so I move between deep
+                AI work and full-stack work depending on what the week needs.
               </p>
               <p>
-                Before Amber, I interned at Cleartrip (Flipkart), where I worked on
-                flight search and booking systems using Java and Spring Boot. During that time,
-                I fixed a pricing issue that had a significant business impact and gained experience 
-                handling production incidents in high-traffic systems.
+                Before Amber, I interned at Cleartrip (Flipkart) on their flight search and
+                booking systems in Java and Spring Boot. That's where I learned what production
+                actually feels like — I fixed a pricing bug that was quietly costing real money,
+                and did my share of on-call firefighting on high-traffic systems.
               </p>
               <p>
-               I graduated with a degree in Computer Science from Chitkara University.
-               Outside of work, I enjoy building side projects, exploring system design, 
-               and creating products that combine solid engineering with a great user experience.
+               I studied Computer Science at Chitkara University. Outside of work I'm usually
+               building something — most recently a resume-ranker I rebuilt around multi-agent
+               pipelines and evals — or digging into system design. I like problems where solid
+               engineering and a genuinely good user experience have to meet.
               </p>
             </div>
 
@@ -196,75 +196,7 @@
         </div>
       </section>
 
-      <!--=============== SKILLS ===============-->
-      <section class="skills section" id="skills">
-        <span class="section__subtitle">Technical Expertise</span>
-        <h2 class="section__title">My Skillset</h2>
-
-        <div class="skills__container container grid">
-          <!-- Programming Languages -->
-          <div class="skills__content">
-            <h3 class="skills__title">Languages</h3>
-            <div class="skills__box">
-              <span class="skills__data">Java</span>
-              <span class="skills__data">JavaScript</span>
-              <span class="skills__data">C</span>
-              <span class="skills__data">C++</span>
-              <span class="skills__data">SQL</span>
-              <span class="skills__data">Python (basic)</span>
-            </div>
-          </div>
-
-          <!-- Frameworks & Libraries -->
-          <div class="skills__content">
-            <h3 class="skills__title">Frameworks</h3>
-            <div class="skills__box">
-              <span class="skills__data">Spring Boot</span>
-              <span class="skills__data">React.js</span>
-              <span class="skills__data">Node.js</span>
-              <span class="skills__data">Express.js</span>
-            </div>
-          </div>
-
-          <!-- Tools & Development -->
-          <div class="skills__content">
-            <h3 class="skills__title">Tools</h3>
-            <div class="skills__box">
-              <span class="skills__data">PostgreSQL</span>
-              <span class="skills__data">AWS</span>
-              <span class="skills__data">GCP</span>
-              <span class="skills__data">Kubernetes</span>
-              <span class="skills__data">SQS</span>
-              <span class="skills__data">Git & GitHub</span>
-            </div>
-          </div>
-
-          <!-- Concepts -->
-          <div class="skills__content">
-            <h3 class="skills__title">Concepts</h3>
-            <div class="skills__box">
-              <span class="skills__data">REST APIs</span>
-              <span class="skills__data">Microservices</span>
-              <span class="skills__data">CI/CD</span>
-              <span class="skills__data">Observability (Kibana)</span>
-            </div>
-          </div>
-
-          <!-- Coursework -->
-          <div class="skills__content">
-            <h3 class="skills__title">Coursework</h3>
-            <div class="skills__box">
-              <span class="skills__data">Data Structures & Algorithms</span>
-              <span class="skills__data">Operating Systems</span>
-              <span class="skills__data">DBMS</span>
-              <span class="skills__data">OOPs</span>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <!--=============== EXPERIENCE ===============-->
+       <!--=============== EXPERIENCE ===============-->
       <section class="services__container" id="experience">
         <span class="section__subtitle">My Experience</span>
         <h2 class="section__title">What I've Done</h2>
@@ -278,29 +210,32 @@
               <li class="services__item">
                 <i class="bx bx-check services__icon"></i>
                 <p class="services__info">
-                  Led the migration of customer support AI from 
-                  Zendesk to Zoho across web and WhatsApp, increasing 
-                  AI resolution rates from 40%→78% (web) and 50%→75% (WhatsApp).
+                  Re-architected the support-AI orchestration layer from LangGraph to the
+                  OpenAI Responses API, cutting LLM calls by ~60% and enabling persistent
+                  memory, prompt caching, and tighter context management.
                 </p>
               </li>
               <li class="services__item">
                 <i class="bx bx-check services__icon"></i>
                 <p class="services__info">
-                  Built whitelabel personalization features with React and REST APIs, 
-                  enabling custom branding, pages, forms, and inventory flows 
-                  that contributed to 70% growth in leads.
+                  Drove latency work (~12s→7s) by restructuring the pipeline to run independent
+                  nodes concurrently (extraction, tagging, summary, intent) and removing
+                  redundant processing.
                 </p>
               </li>
               <li class="services__item">
                 <i class="bx bx-check services__icon"></i>
                 <p class="services__info">
-                  Reduced AI response latency from 12s→7s by parallelizing workflows and optimizing backend processing.
+                  Built the AI's inventory-search + recommendation tooling — search tool,
+                  preference capture, and a constraint-relaxation strategy for near-matches
+                  when exact results are sparse — contributing to a 71% CSAT on AI-handled conversations.
                 </p>
               </li>
               <li class="services__item">
                 <i class="bx bx-check services__icon"></i>
                 <p class="services__info">
-                  Integrated Blue Machines AI for lead qualification, improving call engagement 2×.
+                  Built full-stack whitelabel personalization (Rails + React) — per-partner
+                  custom pages, branding, and partner-specific accommodation discovery.
                 </p>
               </li>
             </ul>
@@ -337,6 +272,133 @@
       </section>
 
 
+
+      <!--=============== SKILLS ===============-->
+      <section class="skills section" id="skills">
+        <span class="section__subtitle">Technical Expertise</span>
+        <h2 class="section__title">My Skillset</h2>
+
+        <div class="skills__container container grid">
+          <!-- Programming Languages -->
+          <div class="skills__content">
+            <h3 class="skills__title">Languages</h3>
+            <div class="skills__box">
+              <span class="skills__data">Python</span>
+              <span class="skills__data">Java</span>
+              <span class="skills__data">JavaScript/TypeScript</span>
+              <span class="skills__data">SQL</span>
+              <span class="skills__data">C/C++</span>
+            </div>
+          </div>
+
+          <!-- AI/ML -->
+          <div class="skills__content">
+            <h3 class="skills__title">AI/ML</h3>
+            <div class="skills__box">
+              <span class="skills__data">LLM orchestration (OpenAI Responses API, LangGraph)</span>
+              <span class="skills__data">Embeddings/Semantic search</span>
+              <span class="skills__data">LangSmith</span>
+              <span class="skills__data">Evals</span>
+              <span class="skills__data">Guardrails</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div class="skills__content">
+            <h3 class="skills__title">Frameworks</h3>
+            <div class="skills__box">
+              <span class="skills__data">Spring Boot</span>
+              <span class="skills__data">React</span>
+              <span class="skills__data">Node/Express</span>
+            </div>
+          </div>
+
+          <!-- Tools & Development -->
+          <div class="skills__content">
+            <h3 class="skills__title">Tools</h3>
+            <div class="skills__box">
+              <span class="skills__data">PostgreSQL</span>
+              <span class="skills__data">AWS</span>
+              <span class="skills__data">GCP</span>
+              <span class="skills__data">Git</span>
+              <span class="skills__data">GitHub</span>
+            </div>
+          </div>
+
+          <!-- Concepts -->
+          <div class="skills__content">
+            <h3 class="skills__title">Concepts</h3>
+            <div class="skills__box">
+              <span class="skills__data">REST APIs</span>
+              <span class="skills__data">Microservices</span>
+              <span class="skills__data">CI/CD</span>
+              <span class="skills__data">Observability</span>
+            </div>
+          </div>
+
+          <!-- Coursework -->
+          <!-- <div class="skills__content">
+            <h3 class="skills__title">Coursework</h3>
+            <div class="skills__box">
+              <span class="skills__data">Data Structures & Algorithms</span>
+              <span class="skills__data">Operating Systems</span>
+              <span class="skills__data">DBMS</span>
+              <span class="skills__data">OOPs</span>
+            </div>
+          </div>
+        </div> -->
+
+      </section>
+
+
+
+      <!--=============== WORK ===============-->
+      <section class="work section" id="work">
+        <span class="section__subtitle">Outside of Work</span>
+        <h2 class="section__title">Featured Projects</h2>
+
+        <div class="work__container container grid">
+          <div class="work__card">
+            <img src="assets/img/skillquesthome.png" alt="Skill Quest" class="work__img" />
+            <h3 class="work__title">Skill Quest</h3>
+            <span class="work__subtitle">Multi-agent resume ranker with deterministic embedding matching, evals & guardrails</span>
+            <div class="work__tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>GPT-5.6 Luna</span> 
+              <span>text-embedding-3-small</span>
+            </div>
+            <a href="https://skill-quest.onrender.com/" target="_blank" class="work__button">
+              View Project <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+            <a href="https://github.com/jahnavi-22/SkillQuest" target="_blank" class="work__button">
+              View on GitHub <i class="bx bxl-github work__icon"></i>
+            </a>
+          </div>
+
+          <div class="work__card">
+            <img src="assets/img/codeweave1.png" alt="CodeWeave" class="work__img" />
+            <h3 class="work__title">CodeWeave</h3>
+            <span class="work__subtitle">Real-time collaborative code editor for pair programming & interviews</span>
+            <div class="work__tags">
+              <span>React</span>
+              <span>Socket.io</span>
+              <span>Websockets</span>
+              <span>Monaco</span>
+            </div>
+            <a href="https://code-weave.onrender.com/" target="_blank" class="work__button">
+              View Project <i class="bx bx-right-arrow-alt work__icon"></i>
+            </a>
+            <a href="https://github.com/jahnavi-22/code-weave" target="_blank" class="work__button">
+              View on GitHub <i class="bx bxl-github work__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      
       <section>
         <div class="credentials container">
           <span class="section__subtitle">Certifications</span>
@@ -353,45 +415,6 @@
               <i class="bx bx-certification"></i>
               Career Essentials in Generative AI — Microsoft & LinkedIn
             </span>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== WORK ===============-->
-      <section class="work section" id="work">
-        <span class="section__subtitle">Outside of Work</span>
-        <h2 class="section__title">Featured Projects</h2>
-
-        <div class="work__container container grid">
-          <div class="work__card">
-            <img src="assets/img/skillquesthome.png" alt="Skill Quest" class="work__img" />
-            <h3 class="work__title">Skill Quest</h3>
-            <span class="work__subtitle">GPT-4 resume ranker with ATS scoring & semantic matching</span>
-            <div class="work__tags">
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>FastAPI</span>
-              <span>GPT-4</span>
-              <span>React</span>
-            </div>
-            <a href="https://skill-quest.onrender.com/" target="_blank" class="work__button">
-              View Project <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-
-          <div class="work__card">
-            <img src="assets/img/codeweave1.png" alt="CodeWeave" class="work__img" />
-            <h3 class="work__title">CodeWeave</h3>
-            <span class="work__subtitle">Real-time collaborative code editor for pair programming & interviews</span>
-            <div class="work__tags">
-              <span>React</span>
-              <span>Socket.io</span>
-              <span>Monaco Editor</span>
-              <span>Piston API</span>
-            </div>
-            <a href="https://github.com/jahnavi-22/code-weave" target="_blank" class="work__button">
-              View Project <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
           </div>
         </div>
       </section>
