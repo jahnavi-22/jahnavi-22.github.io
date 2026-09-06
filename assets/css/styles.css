@@ -934,7 +934,7 @@ button:focus-visible {
 
 @media screen and (max-width: 575px) {
   .home__stats {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .about__info {
